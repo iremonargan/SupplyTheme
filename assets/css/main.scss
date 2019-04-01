@@ -1,0 +1,459 @@
+$stronge-blue: #182e49;
+$light-blue: #528ec1;
+$input-back: #0f243d;
+$grey-color: #E7E7E7;
+$gray-color: #f2f2f2;
+$text-color: #585858;
+.supply {
+  font-family: 'Montserrat', sans-serif;
+  a {
+    text-decoration: none;
+  }
+
+  .wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  header {
+    background: $stronge-blue;
+    color: white;
+    img {
+      width: 100px;
+    }
+    input {
+      padding: 10px 45px 10px 10px;
+      font-size: 14px;
+      background: $input-back;
+    }
+    input::placeholder {
+      color: white;
+    }
+    button {
+      padding: 8px 20px;
+      font-size: 14px;
+      color: white;
+      background: $input-back;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
+    nav {
+      button {
+        background: transparent;
+      }
+      .dropdown-menu {
+        a {
+          color: $light-blue;
+        }
+
+      }
+      .navbar-toggler {
+        background: transparent;
+      }
+      a {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  section {
+    .shop {
+      box-sizing: border-box;
+      .column {
+        border: 1px solid #ececec;
+        position: relative;
+        padding: 15px 0;
+      }
+      .featured-box {
+
+        color: $text-color;
+        font-weight: 500;
+        font-size: 13px;
+
+        img {
+          width: 75%;
+        }
+      }
+      .featured-box:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.02);
+        z-index: 5;
+      }
+      .shop-for {
+        a {
+          font-size: 13px;
+          text-decoration: none;
+          color: $light-blue;
+          font-weight: 500;
+        }
+      }
+    }
+    .feature {
+      .featured {
+        a {
+          font-size: 13px;
+          text-decoration: none;
+          color: $light-blue;
+          font-weight: 500;
+        }
+      }
+      a {
+        button {
+          border: 2px solid $light-blue;
+          color: $light-blue;
+          padding: 0 8px;
+          border-radius: 3px;
+          background: transparent;
+          font-size: 13px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 13px;
+          color: $text-color;
+          font-weight: 500;
+        }
+        h6 {
+          font-size: 20px;
+          color: black;
+          position: relative;
+          span {
+            position: absolute;
+            top: -0.1em;
+            font-weight: bold;
+            font-size: 10px;
+          }
+        }
+      }
+      a:hover img {
+        opacity: 0.9;
+      }
+
+    }
+    .analog {
+      @extend .feature;
+      .analog-cam {
+        @extend .featured;
+      }
+    }
+    .lei {
+      @extend .feature;
+      .leica {
+        @extend .featured;
+      }
+    }
+  }
+  footer {
+    line-height: 1.6;
+    background: $gray-color;
+    color: #6a6a6a;
+    ul {
+      list-style-type: none;
+      padding-bottom: 0;
+      margin-bottom:0;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 17px;
+    }
+    a {
+      font-size: 13px;
+      font-weight: 500;
+      color: #6a6a6a;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    input {
+      background: #e2e2e2;
+      font-size: 12px;
+    }
+    input::placeholder {
+      font-size: 12px;
+      color: #6a6a6a;
+      font-weight: 500;
+    }
+    button {
+      background: #c2c2c2;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #6a6a6a;
+    }
+
+  }
+}
+.more {
+  @extend .supply;
+  .breadcrumb {
+    font-size: 14px;
+  }
+  section {
+    .form-group {
+      font-weight: 500;
+      white-space: nowrap;
+      font-size: 13px;
+      select, span {
+        font-weight: 500;
+        font-size: 13px;
+      }
+    }
+    .paging {
+      a {
+        color: $light-blue;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .aktif {
+        background: transparent !important;
+        color: $text-color;
+      }
+    }
+  }
+}
+.detailpage {
+  @extend .more;
+  section {
+    h6 {
+      font-weight: 700;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 23px;
+      color: black;
+      position: relative;
+      span {
+        position: absolute;
+        top: -0.1em;
+        font-weight: bold;
+        font-size: 10px;
+      }
+    }
+    .form-group {
+      select {
+        width: 40%;
+        border-radius: 1px;
+      }
+    }
+    button {
+      border-radius: 1px;
+      background: $light-blue;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 8px 20px;
+      color: white;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 500;
+      color: $text-color;
+      span {
+        color: $light-blue;
+      }
+    }
+    ul {
+      color: $text-color;
+      font-weight: 500;
+      font-size: 13px;
+
+    }
+    small {
+
+      font-size: 12px;
+    }
+    .description {
+      font-size: 13px;
+      font-weight: 500;
+      li {
+        color: $light-blue;
+      }
+    }
+    .social {
+      a {
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+
+      }
+      .face {
+        border-radius: 2px;
+        background-color: #3b5998;
+      }
+      .twt {
+        border-radius: 2px;
+        background-color: #00aced;
+      }
+      .pint {
+        border-radius: 2px;
+        background: #cb2027;
+      }
+    }
+    .review{
+      border: 1px solid $gray-color;
+      .one{
+        a{
+          cursor: inherit;
+          color: $text-color;
+        }
+      }
+      a{
+
+        font-size: 13px;
+        font-weight: 500;
+        color: $light-blue;
+      }
+      button{
+        background: transparent;
+        color: $light-blue;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .write-rev{
+      form{
+        ul{
+          list-style-type: none;
+          i{
+            margin-right: 5px;
+            color: #e5c649;
+            font-size: 15px;
+          }
+        }
+        color: $text-color;
+        input,textarea{
+          border: 1px solid #ececec;
+          background-color: rgba(88,88,88,0.1);
+          width: 100%;
+          max-width: 100%;
+          display: block;
+        }
+        input::placeholder,textarea::placeholder{
+          color: $text-color;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.siparis_gecmisi{
+  @extend .more;
+  section{
+    h4{
+      font-weight: 700;
+      font-size: 20px;
+    }
+    table{
+      thead{
+        background: black;
+        color: $gray-color;
+      }
+      color: $text-color;
+      font-size: 14px;
+      font-weight: 500;
+      img{
+        width: 80px;
+      }
+    }
+    .bilgi{
+      .kargo{
+        width:300px;
+        .tarih{
+          background: $gray-color;
+        }
+        p{
+          color: black;
+          font-size: 14px ;
+          font-weight:600;
+          span{
+            font-weight: 500;
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+}
+.hesapbilgileri{
+  @extend .supply;
+  section{
+    label{
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-color;
+    }
+    small{
+      font-weight: 500;
+    }
+    input::placeholder{
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-color;
+    }
+    h4,h6{
+      font-weight: 600;
+    }
+    .ekle{
+      color: $light-blue;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .kaldir{
+      color: darkred;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .guncelle{
+      color: $gray-color;
+      font-weight: 500;
+      font-size: 16px;
+      background: $light-blue;
+    }
+    .head{
+      .hesap{
+        background: $gray-color;
+        border: 1px solid darkgrey;
+        p{
+          font-size: 14px;
+          color: black;
+          font-weight: 500;
+          span{
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .supply {
+    header {
+      nav {
+        .dropdown-menu {
+          background: transparent;
+          border: 0;
+        }
+      }
+      .wrapper {
+        max-width: 100%;
+        padding: 0px;
+      }
+    }
+
+  }
+
+}
